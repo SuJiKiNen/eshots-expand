@@ -1,0 +1,11 @@
+* tips
+** It may mess your brain up.
+** It only working when your typed 3 characters.
+** This is useful except your project is small.
+
+* usage
+#+BEGIN_SRC elisp
+(push 'eshots-expand-dabbrev-all-buffers hippie-expand-try-functions-list)
+(push 'eshots-expand-dabbrev hippie-expand-try-functions-list)
+(global-set-key (kbd "M-/") 'hippie-expand)
+#+END_SRC
