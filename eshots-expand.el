@@ -43,7 +43,8 @@ string).  It returns t if a new expansion is found, nil otherwise."
         (progn
           (he-init-string (he-dabbrev-beg) (point))
           (set-marker he-search-loc he-string-beg)
-          (setq he-search-bw t)))
+          (setq he-search-bw t)
+          (setq he-tried-table (cons he-search-string he-tried-table))))
 
     (if (not (equal he-search-string ""))
         (save-excursion
